@@ -1,0 +1,36 @@
+
+body {
+	background-color: lightblue;
+}
+
+canvas {
+	border: 1px solid black;
+	height: 400px;
+	width: 600px;
+	position: absolute;
+	left: 1200px;
+	right: 150px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.card {
+	background-color: lightblue;
+	position: absolute;
+	width: 1200px;
+}
+
+#qwerty {
+	width: 50px;
+}
+
+#censored {
+	display: inline-block;
+	width: 50px;
+}
+
+.card-header {
+	display: inline-block;
+}
