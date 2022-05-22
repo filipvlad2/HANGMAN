@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HANGMAN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="HANGMAN.css" media="screen" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="HANGMAN.js"></script>
+
+  </head>
+  <body>
+      <h1>Hangman game</h1>
+      <div class="card">
+        <div class="card-header" id="card-header">
+            <p class="text-danger" id="lives">LIVES: </p>
+          How to play
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">You will have to enter the word to play with, in the input below, and press the button to start the game</p>
+          <div class="input-group mb-3">
+            <input type="password" class="form-control" placeholder="Uppercase characters only" id="word">
+          </div>
+          <a href="#" class="btn btn-primary" onclick= "introduceWord()">START</a>
+        </div>
+
+        <div class="card-body">
+          <div id="censoredWords">
+
+            </div>
+          <div id="letters">
+
+            </div>
+        </div>
+      </div>
+      <canvas></canvas>
+      <script src="canvas.js"></script>
+  </body>
+</html>
